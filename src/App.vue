@@ -1,30 +1,43 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+    <img @click="$router.push('/')" src="./assets/Pink Red Colorful Birthday Zoom Virtual Background.png" alt="Pink Red Colorful Birthday Zoom Virtual Background">
   <router-view/>
 </template>
 
 <style>
+/* Some reset css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffcdea;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Happy Monkey", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #9e0f0f;
 }
 
 nav {
-  padding: 30px;
+  padding: 2rem;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #2000ad;
+  padding: 0 1rem;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: #4283b9;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 </style>
